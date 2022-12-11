@@ -1,0 +1,4 @@
+# Формат файла: https://git-scm.com/docs/gitignore
+
+# Игнорируемые файлы
+Urho3D.log
