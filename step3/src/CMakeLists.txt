@@ -4,7 +4,7 @@
 cmake_minimum_required (VERSION 3.15)
 
 # Название проекта (solution в Visual Studio)
-project (simple_sprite_batch)
+project (step3)
 
 # Путь к скомпилированному движку
 set (ENV{URHO3D_HOME} ${CMAKE_SOURCE_DIR}/../../engine/build_vs)
@@ -16,7 +16,7 @@ set (CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/../../engine/repo/cmake/Modules)
 include (UrhoCommon)
 
 # Название таргета (экзешник игры, проект в Visual Studio)
-set (TARGET_NAME simple_sprite_batch)
+set (TARGET_NAME step3)
 
 # Создаём список исходных файлов для таргета
 # RECURSE - исходники будут искаться также в подпапках
@@ -30,6 +30,6 @@ define_resource_dirs (GLOB_PATTERNS ${CMAKE_SOURCE_DIR}/../../engine/repo/bin/Co
 # Создаём таргет
 setup_main_executable ()
 
-# В Visual Studio таргет simple_sprite_batch будет назначен стартовым вместо ALL_BUILD,
+# В Visual Studio таргет step3 будет назначен стартовым вместо ALL_BUILD,
 # чтобы потом не делать это вручную при отладке игры
 set_property(DIRECTORY ${CMAKE_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT ${TARGET_NAME})
